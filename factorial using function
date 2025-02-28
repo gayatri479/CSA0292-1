@@ -1,0 +1,17 @@
+#include<stdio.h>
+long int multiplyNumber(intn);
+int main()
+{
+    int n;
+    printf("enter the value of n=");
+    scanf("%d",&n);
+    printf("factorial of %d=%ld",n,multiplyNumber(n));
+    return 0;
+   }
+   long int multiplyNumber(int n)
+   {
+       if(n>=1)
+       return n*multiplyNumber(n-1);
+else
+       return 1;
+   }
